@@ -22,3 +22,9 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+var s = document.createElement('script');
+s.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDN1Cyr9vplNuUCSAZo3wVEBJ9hTsiYrE8&callback=initMap";
+s.type = "text/javascript";
+s.async = false;
+document.getElementsByTagName('head')[0].appendChild(s);
