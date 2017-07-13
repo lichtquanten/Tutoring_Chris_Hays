@@ -1,9 +1,9 @@
 # Instructions
 
-## Initial instructions:
+### Initial
 When you first download the repository, run **npm install** to install needed node packages (like cvstojson and webpack)
 
-## Usage
+### Usage
 
 **npm run build**
 
