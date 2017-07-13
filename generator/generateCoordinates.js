@@ -21,9 +21,9 @@ function handleGeoData(geo) {
   for (var i = 0; i < rawArray.length; i++) {
     var coordinates = rawArray[i].split(',');
     output.push({
-      lat: coordinates[0],
-      lng: coordinates[1]
+      lat: parseFloat(coordinates[0]),
+      lng: parseFloat(coordinates[1])
     })
   }
-  fs.writeFileSync('./coordinates.json', JSON.stringify(output));
+  fs.writeFileSync('../src/static/coordinates.json', JSON.stringify(output));
 }

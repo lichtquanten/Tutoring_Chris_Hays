@@ -1,0 +1,24 @@
+var coordinates = require('./static/coordinates.json');
+
+function initMap() {
+  var mnCenter = {lat: 46.459, lng: -93.685};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 7,
+    center: mnCenter
+  });
+  var marker = new google.maps.Marker({
+    position: mnCenter,
+    map: map
+  });
+  var testCoords = new google.maps.Polygon({
+    paths: coordinates,
+    strokeColor: '#FF0000',
+    strokeOpacity: 0.8,
+    strokeWeight: 10,
+    fillColor: '#FF0000',
+    fillOpacity: 0.35
+  });
+  testCoords.setMap(map);
+}
+
+window.initMap = initMap;
