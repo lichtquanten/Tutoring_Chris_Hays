@@ -1,5 +1,10 @@
 # Instructions
 
+##Initial instructions:
+When you first download the repository, run **npm install** to install needed node packages (like cvstojson and webpack)
+
+##Usage
+
 **npm run build**
 
 builds dist/bundle.js from src/index.js
